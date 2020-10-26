@@ -7,7 +7,7 @@ struct pessoa
 {
 	string nome;
 	string endereco;
-	int cpf;
+	string cpf;
 	int idade;
 };
 
@@ -27,7 +27,7 @@ int main(int argc, char** argv)
 		getline(cin, p[i].endereco);
 
 		cout << "CPF da pessoa " << i + 1 << ": ";
-		cin >>  p[i].cpf;
+		getline(cin, p[i].cpf);
 
 		cout << "Idade da pessoa " << i + 1 << ": ";
 		cin >>  p[i].idade;
